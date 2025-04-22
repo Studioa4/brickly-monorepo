@@ -29,7 +29,7 @@ router.post('/login', async (req, res) => {
     const otp_id = uuidv4()
 
     await pool.query(
-      'INSERT INTO otp_mfa (id, email, codice, scadenza) VALUES ($1, $2, $3, NOW() + INTERVAL '10 minutes')',
+      "INSERT INTO otp_mfa (id, email, codice, scadenza) VALUES ($1, $2, $3, NOW() + INTERVAL '10 minutes')",
       [otp_id, email, otp.toString()]
     )
 
