@@ -9,7 +9,6 @@ import { authMiddleware } from './auth/authMiddleware.js'
 
 dotenv.config()
 
-const PORT = process.env.PORT || 10000
 const app = express()
 app.use(cors())
 app.use(express.json())
@@ -21,7 +20,7 @@ app.use('/api', authRoutes)
 app.use('/api/utente', authMiddleware, utenteRoutes)
 app.use('/api/upload', authMiddleware, uploadRoutes)
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 10000
 app.listen(PORT, () => {
   console.log(`✅ Server avviato su http://localhost:${PORT}`)
 })
