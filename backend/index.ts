@@ -2,7 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
 
-import authRoutes from './auth/login.ts'
+import authRoutes from './auth/login.js'
 import utenteRoutes from './routes/utente'
 import uploadRoutes from './routes/upload'
 import { authMiddleware } from './auth/authMiddleware'
