@@ -9,6 +9,7 @@ import { authMiddleware } from './auth/authMiddleware.js'
 
 dotenv.config()
 
+const PORT = 10000
 const app = express()
 app.use(cors())
 app.use(express.json())
