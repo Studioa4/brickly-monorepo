@@ -1,0 +1,1 @@
+export default function Province() { return <div className="text-xl">🗺️ Pagina Province</div> }

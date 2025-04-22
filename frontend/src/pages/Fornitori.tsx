@@ -1,0 +1,1 @@
+export default function Fornitori() { return <div className="text-xl">🧑‍🔧 Pagina Fornitori</div> }
