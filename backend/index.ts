@@ -5,7 +5,7 @@ import dotenv from 'dotenv'
 import authRoutes from './auth/login.js'
 import utenteRoutes from './routes/utente.js'
 import uploadRoutes from './routes/upload.js'
-import { authMiddleware } from './auth/authMiddleware'
+import { authMiddleware } from './auth/authMiddleware.js'
 
 dotenv.config()
 
