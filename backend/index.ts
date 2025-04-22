@@ -3,8 +3,8 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 
 import authRoutes from './auth/login.js'
-import utenteRoutes from './routes/utente'
-import uploadRoutes from './routes/upload'
+import utenteRoutes from './routes/utente.js'
+import uploadRoutes from './routes/upload.js'
 import { authMiddleware } from './auth/authMiddleware'
 
 dotenv.config()
