@@ -1,6 +1,7 @@
 import express, { Request, Response } from 'express'
 import multer from 'multer'
-import { S3 } from 'aws-sdk'
+import AWS from 'aws-sdk'
+const { S3 } = AWS
 import { v4 as uuidv4 } from 'uuid'
 
 const router = express.Router()
