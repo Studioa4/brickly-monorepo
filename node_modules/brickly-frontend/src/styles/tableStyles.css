@@ -1,0 +1,25 @@
+/* src/styles/tableStyles.css */
+
+.table-wrapper {
+  @apply w-full overflow-x-auto border border-gray-200 rounded-lg;
+}
+
+.table-base {
+  @apply min-w-full text-sm text-left;
+}
+
+.table-header {
+  @apply bg-gray-100 text-gray-700 font-semibold;
+}
+
+.table-header-cell {
+  @apply px-4 py-2;
+}
+
+.table-row {
+  @apply even:bg-gray-50 hover:bg-gray-100 transition;
+}
+
+.table-cell {
+  @apply px-4 py-2 text-gray-800;
+}

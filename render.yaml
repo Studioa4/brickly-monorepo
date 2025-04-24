@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: brickly-backend
+    env: node
+    plan: free
+    rootDir: apps/brickly-monorepo/backend
+    buildCommand: npm install && npm run build
+    startCommand: npx tsx server.ts
+    autoDeploy: true
+    envVars:
+      - key: SUPABASE_URL
+        value: https://bizlnfdqwpdcvlwrisme.supabase.co
+      - key: SUPABASE_ANON_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJpemxuZmRxd3BkY3Zsd3Jpc21lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUwNjA1NTMsImV4cCI6MjA2MDYzNjU1M30.Drv9kzpNfwknlalKz59rwgIOk2iG1pvfpJjFNxx8bK8
+      - key: PORT
+        value: 10000
