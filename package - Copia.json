@@ -1,0 +1,11 @@
+{
+  "name": "brickly-monorepo",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "dependencies": {
+    "undici": "^7.8.0"
+  }
+}
